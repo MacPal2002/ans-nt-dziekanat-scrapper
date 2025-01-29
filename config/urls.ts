@@ -1,0 +1,2 @@
+export const LOGIN_URL = "https://wu.ans-nt.edu.pl/ppuz-stud-app/ledge/view/ImapLogin?action=security.authentication.ImapLogin";
+export const AJAX_URL = "https://wu.ans-nt.edu.pl/ppuz-stud-app/ledge/view/AJAX";
