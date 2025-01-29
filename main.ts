@@ -4,7 +4,8 @@ import { loadSession, saveSession } from "./utils/session.ts";
 import { PASSWORD, LOGIN } from "./config/credentials.ts";
 
 
-const TARGET_DATE = "2025-01-07";
+// Pobieranie daty z argumentu CLI
+const TARGET_DATE = Deno.args[0] || new Date().toISOString().split("T")[0];
 
 async function main() {
     console.log(`🚀 Sprawdzam sesję dla użytkownika ${LOGIN}...`);
