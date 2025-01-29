@@ -1,4 +1,4 @@
-# 📌 Scrapper - Plan Zajęć
+# 📅 Scrapper - Plan Zajęć
 
 ## 📖 Opis Projektu
 Ten projekt to **scraper** pobierający plan zajęć z systemu **Wirtualny Dziekanat** uczelni **Akademii Nauk Stosowanych w Nowym Targu**. Umożliwia logowanie do systemu, pobieranie planu zajęć dla konkretnej daty i zapisywanie danych do pliku CSV.
@@ -19,20 +19,23 @@ Ten projekt to **scraper** pobierający plan zajęć z systemu **Wirtualny Dziek
 📦 scrapper
 ├── 📂 config          # Konfiguracja aplikacji
 │   ├── credentials.ts # Dane logowania (pobiera z .env)
-│   ├── config.ts      # Ustawienia API
+│   ├── urls.ts      # Ustawienia API
 │
 ├── 📂 services        # Główne funkcje
 │   ├── login.ts       # Logowanie do systemu
 │   ├── fetchSchedule.ts # Pobieranie planu zajęć
 │
+│── 📂 models
+│   ├── schedule.ts        # Model danych dla planu zajęć
+|
 ├── 📂 utils           # Funkcje pomocnicze
 │   ├── session.ts     # Obsługa sesji użytkownika
-│   ├── utils.ts       # Obsługa dat
+│   ├── dateUtils.ts       # Obsługa dat
 │
 ├── 📂 data
-│    ├── session.ts     # Zapisane sesje użytkownika
-│   ├── 📂 data       # Pliki z zapisanym planem zajęć
-│        ├── YYYY-MM-DD.csv
+│   ├── session.json     # Zapisane sesje użytkownika
+│   ├── 📂 schedules      # Pliki z zapisanym planem zajęć
+│       ├── YYYY-MM-DD.csv
 │
 ├── 📜 deno.json       # Konfiguracja Deno
 └── 📜 main.ts         # Główny plik uruchamiający aplikację
