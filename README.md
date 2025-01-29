@@ -1,16 +1,16 @@
 # 📌 Scrapper - Plan Zajęć
 
 ## 📖 Opis Projektu
-Ten projekt to **scraper** pobierający plan zajęć z systemu **Wirtualny Dziekanat** uczelni Akademii Nauk Stosowanych w Nowym Targu. Umożliwia logowanie do systemu, pobieranie planu zajęć dla konkretnej daty i zapisywanie danych do pliku CSV.
+Ten projekt to **scraper** pobierający plan zajęć z systemu **Wirtualny Dziekanat** uczelni **Akademii Nauk Stosowanych w Nowym Targu**. Umożliwia logowanie do systemu, pobieranie planu zajęć dla konkretnej daty i zapisywanie danych do pliku CSV.
 
 ---
 
 ## 🚀 Funkcjonalności
-✔️ Automatyczne logowanie do systemu
-✔️ Obsługa sesji użytkownika
-✔️ Pobieranie planu zajęć dla wybranego dnia
-✔️ Zapisywanie planu do pliku CSV
-✔️ Automatyczne odświeżanie sesji w przypadku wygaśnięcia
+ ✔️ Automatyczne logowanie do systemu  
+ ✔️ Obsługa sesji użytkownika  
+ ✔️ Pobieranie planu zajęć dla wybranego dnia  
+ ✔️ Zapisywanie planu do pliku CSV  
+ ✔️ Automatyczne odświeżanie sesji w przypadku wygaśnięcia  
 
 ---
 
@@ -30,9 +30,9 @@ Ten projekt to **scraper** pobierający plan zajęć z systemu **Wirtualny Dziek
 │   ├── utils.ts       # Obsługa dat
 │
 ├── 📂 data
-    ├── session.ts     # Zapisane sesje użytkownika
+│    ├── session.ts     # Zapisane sesje użytkownika
 │   ├── 📂 data       # Pliki z zapisanym planem zajęć
-        ├── YYYY-MM-DD.csv
+│        ├── YYYY-MM-DD.csv
 │
 ├── 📜 deno.json       # Konfiguracja Deno
 └── 📜 main.ts         # Główny plik uruchamiający aplikację
@@ -65,7 +65,7 @@ Ten projekt to **scraper** pobierający plan zajęć z systemu **Wirtualny Dziek
 ## 📝 Użycie
 📌 **Pobranie planu zajęć dla konkretnej daty**:
 ```sh
-   deno run start 2025-01-13
+   deno run start YYYY-MM-DD
 ```
 
 📌 **Dostęp do wygenerowanych plików**:
