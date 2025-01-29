@@ -59,7 +59,7 @@ Ten projekt to **scraper** pobierający plan zajęć z systemu **Wirtualny Dziek
 3️⃣ **Dodaj dane logowania**:
    Utwórz plik `.env` i wpisz:
    ```sh
-   LOGIN=TwojeLogin
+   LOGIN=TwojLogin
    PASSWORD=TwojeHaslo
    ```
 
